@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+        <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+        <title>Signature Pad</title>
+    </head>
+
+    <body>
+        <form class="signature-pad-form" action="#">
+
+          <ul style="list-style: none; padding: 0;">
+            <li>
+              <label for="apellido1">1er Apellido:</label>
+              <input type="text" id="apellido1" name="user_apellido1" autocomplete="off">
+            </li>
+            <li>
+              <label for="apellido2">2do Apellido:</label>
+              <input type="text" id="apellido2" name="user_apellido2" autocomplete="off">
+            </li>
+            <li>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="user_nombre" autocomplete="off">
+            </li>
+           </ul>
+
+            <canvas height="100" width="300" class="signature-pad"></canvas>
+
+            <p>
+                <a href="#" class="clear-button">Clear</a>
+            </p>
+            <button class="submit-button" type="submit">SUBMIT</button>
+        </form>
+
+        <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://parall.ax/parallax/js/jspdf.js"></script>
+    </body>
+</html>
